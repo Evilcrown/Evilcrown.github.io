@@ -225,7 +225,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="linux文件复制命令-cp"><a href="#linux文件复制命令-cp" class="headerlink" title="linux文件复制命令-cp"></a>linux文件复制命令-cp</h2><p>1、cp命令作用</p>
+<p>cp用于复制文件或目录</p>
+<p>2、cp命令语法</p>
+<p>cp [options] sourcedir   destdir<br>参数说明：</p>
+<p>-a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。<br>-d：复制时保留链接。这里所说的链接相当于Windows系统中的快捷方式。<br>-f：覆盖已经存在的目标文件而不给出提示。<br>-i：与-f选项相反，在覆盖目标文件之前给出提示，要求用户确认是否覆盖，回答”y”时目标文件将被覆盖。<br>-p：除复制文件的内容外，还把修改时间和访问权限也复制到新文件中。<br>-r：若给出的源文件是一个目录文件，此时将复制该目录下所有的子目录和文件。<br>-l：不复制文件，只是生成链接文件。<br>3、cp命令案例 1）cp /etc/sys.conf /home/<br>将/etc/sys.conf文件复制到home目录下<br>2)cp -r test/ /home/<br>将当前目录”test/“以及其所有文件复制到home目录下<br>cp -r test/ nettest<br>将当前目录”test/“下的所有文件复制到新目录“newtest”下<br>3)cp -a /etc/ /home</p>
+<h2 id="将”-etc-“目录以及所有文件和子目录以及延伸的（保留链接、文件属性）复制到-home目录下"><a href="#将”-etc-“目录以及所有文件和子目录以及延伸的（保留链接、文件属性）复制到-home目录下" class="headerlink" title="将”/etc/“目录以及所有文件和子目录以及延伸的（保留链接、文件属性）复制到/home目录下"></a>将”/etc/“目录以及所有文件和子目录以及延伸的（保留链接、文件属性）复制到/home目录下</h2><p>作者：xianjie0318<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/xianjie0318/article/details/65936402" target="_blank" rel="noopener">https://blog.csdn.net/xianjie0318/article/details/65936402</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
+
       
 
       
